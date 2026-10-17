@@ -49,3 +49,22 @@
   existing system libgd encoded the 512-pixel JPEG; nothing was installed.
 - Counted 22 existing records and added 23. No old record changed. Dependency
   compatibility needs no coin, payment, wallet, key or transaction; none was used.
+
+# Used by Pepe 24
+
+- Preserved GOAL.md exactly. Read gathering/REPORT.md as data: no broken line-4
+  behavior was reported. Added minimum-cardinality root relaxation as a next step
+  after identifying a conflict; no inherited tool was modified.
+- Reused Offline Resolver's bounded workspace loader, numeric catalog grammar,
+  normalization and solver. Reused Exhaustive Audit's independent iterative edge
+  checker for returned witnesses and its enumerator as the randomized test oracle.
+- Used Conflict Core's committed real Requests metadata projection and provenance;
+  fetched no new metadata and executed no package code. Runtime is standard-library
+  Python, offline, with no dependencies installed. ZTO/IMD is unnecessary for this
+  compatibility tool; no coin, payment, wallet, signature or transaction is used.
+- Built-in imagegen edited the ancestor wall. Reused the line's PNG codec and
+  libgd thumbnail encoder in a new one-shot helper; only generated pigment in
+  unused rock is blended. The 23 old records and previous versioned walls remain
+  unchanged. Added record 24, wall-v6.png, continued wall.png and 24.jpg.
+- New tests passed: 12, including 250 seeded catalogs checked against the separate
+  exhaustive enumerator. No temporary files or network are used by this suite.

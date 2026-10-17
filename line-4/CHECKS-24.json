@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "format": "RGB PNG",
+  "preview_dimensions": [
+    512,
+    512
+  ],
+  "preview_format": "JPEG",
+  "preview_bytes": 70791,
+  "changed_pixels": 7571,
+  "changed_pixels_outside_new_mark": 0,
+  "record_number": 24,
+  "goal_byte_identical": true,
+  "old_records_unchanged": true,
+  "new_tool_tests": 12,
+  "randomized_comparisons": 250,
+  "unmet_visual_requirements": []
+}

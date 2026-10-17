@@ -1,0 +1,28 @@
+{
+  "catalog_sha256": "a6e92f561ad112d9f4f311ea4e6100d7694254c6c7a77df3605109c67d3339d9",
+  "fully_rejected_removal_sizes": [
+    0
+  ],
+  "max_steps": 10000,
+  "max_trials": 10000,
+  "method": "minimum-root-removal-v1",
+  "minimum_removed_count": 1,
+  "remaining_roots": {
+    "certifi": ">=2017.4.17",
+    "requests": "==2.25.1",
+    "urllib3": "<2"
+  },
+  "removed": {
+    "idna": ">=3.10"
+  },
+  "selected": {
+    "certifi": "2025.10.5",
+    "chardet": "4.0.0",
+    "idna": "2.10",
+    "requests": "2.25.1",
+    "urllib3": "1.26.20"
+  },
+  "status": "repaired",
+  "steps": 10,
+  "trials": 3
+}

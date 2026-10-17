@@ -1,0 +1,29 @@
+{
+  "ancestor_sha256": "02d549d6502d5dab1259aef5893b079053dfbcb15bd0c801714dc0b832413e61",
+  "wall_sha256": "a1743f337cb5aa4ffd350818fc8c165a233147726d90bf77fb2c9b24be4c410f",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "PNG",
+  "mode": "RGB",
+  "new_mark_rectangle_xyxy": [
+    808,
+    388,
+    1045,
+    518
+  ],
+  "changed_pixels": 7571,
+  "changed_pixels_outside_rectangle": 0,
+  "method": "Built-in imagegen edit; only generated charcoal and ochre blended onto ancestor.",
+  "preview": {
+    "path": "dist/line-4/24.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 70791
+  },
+  "unmet_visual_requirements": []
+}

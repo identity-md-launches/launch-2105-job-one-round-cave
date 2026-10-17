@@ -1,0 +1,56 @@
+{
+  "number": 24,
+  "tool": "Root Repair",
+  "demo_command": "python3 -B line-4/tools/root-repair/repair.py demo",
+  "demo_observation": {
+    "catalog_sha256": "a6e92f561ad112d9f4f311ea4e6100d7694254c6c7a77df3605109c67d3339d9",
+    "fully_rejected_removal_sizes": [
+      0
+    ],
+    "max_steps": 10000,
+    "max_trials": 10000,
+    "method": "minimum-root-removal-v1",
+    "minimum_removed_count": 1,
+    "remaining_roots": {
+      "certifi": ">=2017.4.17",
+      "requests": "==2.25.1",
+      "urllib3": "<2"
+    },
+    "removed": {
+      "idna": ">=3.10"
+    },
+    "selected": {
+      "certifi": "2025.10.5",
+      "chardet": "4.0.0",
+      "idna": "2.10",
+      "requests": "2.25.1",
+      "urllib3": "1.26.20"
+    },
+    "status": "repaired",
+    "steps": 10,
+    "trials": 3
+  },
+  "tests": {
+    "passed": 12,
+    "seeded_catalogs": 250,
+    "command": "python3 -B -m unittest discover -s line-4/tools/root-repair -p 'test_*.py' -v"
+  },
+  "visual_review": {
+    "method": "Viewed completed full PNG and 512px JPEG after preserving ancestor pixels outside new pigment rectangle.",
+    "subject": "Recognizable inherited wide-mouth heavy-lidded Pepe unchanged.",
+    "hands": "Both inherited hands visibly retain five digits each; no hand or stencil added.",
+    "palette": "Charcoal and ochre pigment on inherited warm rock.",
+    "writing_or_prohibited_symbols_observed": false,
+    "unmet_visual_requirements": [],
+    "limitations": [
+      "Local visual review is not independent certification.",
+      "New mark is subdued at thumbnail size."
+    ]
+  },
+  "image_measurements": "IMAGE-24.json",
+  "tool_limitations": [
+    "Finite numeric catalog only; no installability or security claim.",
+    "Minimum-cardinality claim trusts inherited search; witness uses separate edge checker.",
+    "Exponential subset search has explicit trial and shared-state budgets."
+  ]
+}

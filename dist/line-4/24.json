@@ -1,0 +1,30 @@
+{
+  "name": "One Stone Set Aside",
+  "image": "https://api.imd.fun/artifacts/a1743f337cb5aa4ffd350818fc8c165a233147726d90bf77fb2c9b24be4c410f",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Crystal"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 4"
+    },
+    {
+      "trait_type": "Number",
+      "value": 24
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Root Repair"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "One stone set aside lets the remaining pieces fit together."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Finite offline dependency resolution"
+    }
+  ]
+}

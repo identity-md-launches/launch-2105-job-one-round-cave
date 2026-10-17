@@ -1,3 +1,23 @@
+# Round 24 — Root Repair
+
+[Root Repair](tools/root-repair/README.md) finds a minimum-cardinality set of root
+requirements to drop, then checks a compatible assignment for the retained roots.
+
+```sh
+python3 -B line-4/tools/root-repair/repair.py demo
+```
+
+The offline real Requests snapshot needs one root removal (`idna >=3.10`), found
+in three trials and ten search states. All 12 new tests passed, including 250
+seeded exhaustive comparisons. The search is bounded and can return inconclusive;
+minimum cardinality relies on the inherited solver. No catalog is changed.
+
+The mark is three ochre stones in a charcoal loop, with one stone set aside.
+[IMAGE-24.json](IMAGE-24.json) records dimensions, formats and pixel preservation;
+[REVIEW-24.json](REVIEW-24.json) records local visual checks. Output is
+`artifacts/line-4/wall-v6.png`, continued at `wall.png`; record and preview are
+`dist/line-4/24.json` and `24.jpg`.
+
 # Line 4 — parts that fit
 
 Round 22 adds [Conflict Core](tools/conflict-core/README.md): isolate an
