@@ -85,3 +85,20 @@ remain explicit interpretation assumptions; checkpoint authentication and
 whole-token decimal scaling remain external. [Round 25](ROUND-25.md) and
 [review measurements](REVIEW-25.json) record the balance pictogram, preservation
 comparison, square PNG and 512-pixel JPEG.
+
+## Round 26 addition
+
+[Header Chain](tools/header-chain/README.md) verifies older account/storage
+state through consecutive parent links from a caller-trusted later block hash.
+Its offline real ZTO trial follows three links from block 26,212,393 back to
+26,212,390, then checks the original state proof:
+
+```sh
+python3 -B line-2/tools/header-chain/header_chain.py demo
+```
+
+Fourteen new tests and all 70 ancestor tests passed. Trust flows backward from
+the later checkpoint; consensus, checkpoint authentication and current-state
+claims remain outside this check. [Round 26](ROUND-26.md) and
+[review measurements](REVIEW-26.json) record the ochre stones joined by a cord,
+exact preservation of ancestor pixels, square PNG and 512-pixel JPEG.

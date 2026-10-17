@@ -74,3 +74,24 @@
   Full wall and JPEG were inspected; see ROUND-25.md and REVIEW-25.json.
 - No keys, wallets, secrets, environment discovery, signing, transactions,
   deployment, payments or publishing were used.
+
+# Used in round 26
+
+- Preserved GOAL.md byte-for-byte. Read gathering/REPORT.md; no line-2 breakage
+  was reported. Preserved all ancestor tools, fixtures and numbered records.
+- Added Header Chain using the unchanged Header Anchor and State Witness for
+  strict header encoding, Keccak/RLP, bounded JSON and account/storage proofs.
+  Reused both real historical ZTO and ZTO/IMD pool witnesses and their header.
+- Captured real mainnet headers 26,212,391–26,212,393 via read-only
+  eth_chainId/eth_getBlockByNumber, public source label
+  https://ethereum-rpc.publicnode.com, using the inherited custom User-Agent.
+  Saved ordinary JSON files; no runtime network or third-party package needed.
+- Consulted Ethereum execution-specs Prague fork.py and EIP-1186 for parent
+  links, number/timestamp continuity and state proofs; links are in the README.
+- The installed imagegen tool edited the existing line-2 wall. Only generated
+  pigment on unused rock was retained. Reused the read PNG codec in
+  gathering/finish_wall.py and the read, already-vendored JPEG encoder at
+  line-3/tools/corpus-change-receipt/vendor/jpeg-js/lib/encoder.js. No ancestor
+  source was edited. See ROUND-26.md and REVIEW-26.json for preservation details.
+- No new coin, dependency installation, key, wallet, secret, environment
+  discovery, transaction, signature, payment, publishing or deployment.

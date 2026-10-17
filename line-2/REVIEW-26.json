@@ -1,0 +1,83 @@
+{
+  "round": 26,
+  "ancestorSha256": "34a0d92d765d9fa30b6facd0dcca8c1df50ef3c541a7af69a89e61afbf48bbf0",
+  "generatedDraftSha256": "54e10335ae2581a957911975399af7e200acb366f421b67328b92af02ca45d61",
+  "wallSha256": "0988fca17fed92b5ee05af3a667a71f8f1d0aee744587bbaad97a8f61c8a0a28",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "PNG",
+  "channels": "RGB",
+  "newMarkRectangle": [
+    430,
+    260,
+    205,
+    95
+  ],
+  "changedPixels": 3939,
+  "changedPixelsOutsideRectangle": 0,
+  "method": "Imagegen edited the ancestor; only its new pigment was blended onto unused rock.",
+  "images": [
+    {
+      "path": "artifacts/line-2/wall-v6.png",
+      "format": "PNG",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "bytes": 3936660,
+      "sha256": "0988fca17fed92b5ee05af3a667a71f8f1d0aee744587bbaad97a8f61c8a0a28"
+    },
+    {
+      "path": "artifacts/line-2/wall.png",
+      "format": "PNG",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "bytes": 3936660,
+      "sha256": "0988fca17fed92b5ee05af3a667a71f8f1d0aee744587bbaad97a8f61c8a0a28"
+    },
+    {
+      "path": "dist/line-2/26.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        512,
+        512
+      ],
+      "bytes": 77157,
+      "sha256": "0060797d07b1eafe8000299fc71c7caa44447fc9ce70e502a6a0b38649be07ed"
+    }
+  ],
+  "unmetVisualRequirements": [],
+  "record": "dist/line-2/26.json",
+  "goalUnchanged": true,
+  "olderRecordsUnchanged": 25,
+  "offlineTests": {
+    "headerChainPassed": 14,
+    "ancestorPassed": 70,
+    "failed": 0
+  },
+  "visualReview": {
+    "method": "Full PNG and JPEG visual inspection, plus decoded pixel comparison with ancestor.",
+    "recognizablePepe": true,
+    "digitsPerAncestorHand": [
+      5,
+      5
+    ],
+    "newHandsOrHandprints": 0,
+    "ancestorPaintingRetained": true,
+    "prohibitedVisualElementsObserved": false,
+    "externalVisualApproval": false
+  },
+  "limitations": [
+    "Checkpoint chain, validity, canonicality and finality require independent authentication; the demo checkpoint is an RPC observation.",
+    "The explicitly required beside-record JPEG is in dist/line-2 despite the conflicting blanket picture-location rule.",
+    "The charcoal cord is thin at thumbnail size; no independent external visual approval."
+  ],
+  "continuationStorage": {
+    "path": "artifacts/line-2/wall.png",
+    "relativeSymlink": "wall-v6.png"
+  }
+}

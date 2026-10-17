@@ -1,0 +1,52 @@
+{
+  "ancestry": {
+    "blockHashesOldestFirst": [
+      "0x38dc4deb12174972d332cc1f95008b25ea87434f420ce0a51938e1b28755e9dc",
+      "0x003dfd9ff18b7d051d3301685d5b9afcb4d6a341203088868087b27b6904db2e",
+      "0x2c81bcf83428135ad1c9e91340473d4d407982dbf8b8b9ccf0c8652ed2fad2fd",
+      "0xead51f4e385140de3b2010a5b4c96106e8bf27fdb836246e57e18ad5df545a33"
+    ],
+    "checkpoint": {
+      "blockHash": "0xead51f4e385140de3b2010a5b4c96106e8bf27fdb836246e57e18ad5df545a33",
+      "blockNumber": "0x18ff829",
+      "headerSchema": "prague",
+      "stateRoot": "0x1df44ee9888ec0e3688f62edbe06d8c376036e221a9ac3b1f66f0134f1aebe10",
+      "timestamp": "0x6ad36f7b"
+    },
+    "elapsedSeconds": 36,
+    "headerCount": 4,
+    "parentLinks": 3,
+    "target": {
+      "blockHash": "0x38dc4deb12174972d332cc1f95008b25ea87434f420ce0a51938e1b28755e9dc",
+      "blockNumber": "0x18ff826",
+      "headerSchema": "prague",
+      "stateRoot": "0x70c13580735123b57c0a9a24692875f4ef366b04c69d92af9f539561e626d512",
+      "timestamp": "0x6ad36f57"
+    }
+  },
+  "demo": "Real historical mainnet observations. The bundled checkpoint was obtained from RPC, not independently authenticated.",
+  "state": {
+    "accountExists": true,
+    "address": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+    "codeHash": "0x24e03ed7d7d3d6dc010b9a9836e419a3eb4215383b463f4e6685b4816435f16d",
+    "nativeBalanceWei": "0",
+    "nonce": "0x1",
+    "stateRoot": "0x70c13580735123b57c0a9a24692875f4ef366b04c69d92af9f539561e626d512",
+    "storage": [
+      {
+        "exists": false,
+        "slot": "0x0",
+        "value": "0x0"
+      },
+      {
+        "exists": false,
+        "slot": "0x1",
+        "value": "0x0"
+      }
+    ],
+    "storageRoot": "0x9f797ae0bae7c79c8f9c259b07a2fbca558644948b458448d501a03e5b6b98c8",
+    "verified": true
+  },
+  "trust": "State is proven at the oldest supplied header, linked by parent hashes to the explicitly supplied later checkpoint. Authenticate the checkpoint, its chain, canonicality, consensus/execution validity and finality independently. This checks header hashes, consecutive numbers and increasing timestamps, not consensus rules. It does not authenticate newer headers from an older checkpoint, prove current state, or establish token storage semantics.",
+  "verified": true
+}
