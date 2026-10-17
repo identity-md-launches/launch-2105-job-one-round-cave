@@ -1,0 +1,37 @@
+{
+  "ancestor_sha256": "253f3b6459887ce0b955266a7ddddc92412da5dbf26287b0f4b4d51b7d5f224e",
+  "wall_sha256": "0210046796467d225bdb7d099d5d96c8c00802d381c1be3b4b0995574acfcca0",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "PNG",
+  "mode": "RGB",
+  "wall_paths": [
+    "artifacts/line-1/wall-v6.png",
+    "artifacts/line-1/wall.png"
+  ],
+  "thumbnail": {
+    "path": "dist/line-1/26.jpg",
+    "dimensions": [
+      512,
+      512
+    ],
+    "format": "JPEG",
+    "bytes": 96571
+  },
+  "mark_rectangle": [
+    835,
+    630,
+    225,
+    72
+  ],
+  "changed_pixels": 3173,
+  "changed_pixels_outside_rectangle": 0,
+  "method": "Installed imagegen pigment insert, composited onto inherited rock.",
+  "unmet_visual_requirements": [],
+  "visual_review": "Inspected full wall and 512px JPEG: inherited Pepe retains heavy-lidded eyes, wide mouth and five digits on each visible hand; no new hands, handprints, words, numbers, logo, border or prohibited symbols. Bridge is small and faint at thumbnail size.",
+  "unmet_requirements": [
+    "The explicit dist/ JPEG location conflicts with the blanket pictures-under-artifacts rule; the requested beside-record JPEG location was followed."
+  ]
+}

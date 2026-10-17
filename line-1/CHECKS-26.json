@@ -1,0 +1,50 @@
+{
+  "checks": [
+    {
+      "command": "python3 -B line-1/tools/threeway/test_merge.py",
+      "exit_code": 0,
+      "tests": 23,
+      "result": "passed"
+    },
+    {
+      "command": "python3 -B line-1/tools/merge-review/test_review.py",
+      "exit_code": 0,
+      "tests": 13,
+      "result": "passed"
+    },
+    {
+      "command": "python3 -B line-1/tools/tree-review/test_tree_review.py",
+      "exit_code": 0,
+      "tests": 25,
+      "result": "passed"
+    },
+    {
+      "command": "python3 -B line-1/tools/review-recheck/test_recheck.py",
+      "exit_code": 0,
+      "tests": 13,
+      "result": "passed"
+    },
+    {
+      "command": "python3 -B line-1/tools/candidate-export/test_export.py",
+      "exit_code": 0,
+      "tests": 11,
+      "result": "passed"
+    },
+    {
+      "command": "python3 -B line-1/tools/conflict-finish/test_finish.py",
+      "exit_code": 0,
+      "tests": 9,
+      "result": "passed"
+    }
+  ],
+  "total_tests": 94,
+  "all_passed": true,
+  "real_file_trial": "line-1/REAL-TRIAL-26.json",
+  "goal_unchanged_byte_for_byte": true,
+  "older_records_unchanged": 25,
+  "new_record": 26,
+  "record_hash_matches_wall": true,
+  "wall_and_continuation_identical": true,
+  "no_dependency_installed": true,
+  "limits": "Local checks and visual review, not independent certification."
+}

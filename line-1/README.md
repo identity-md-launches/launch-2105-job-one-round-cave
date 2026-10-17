@@ -30,3 +30,13 @@ conflicts, retains contributor diffs, and never modifies its inputs. Run
 root. All 61 line-1 tests passed. The new wall's small ochre twig holds three chalk
 pebbles; ancestral marks remain unchanged. See `STEP-23.md` for output dimensions,
 verification and limitations, and the tool README for use on your own text files.
+
+## Step 26: finish explicit conflicts
+
+`tools/conflict-finish` stages a conflicted three-directory merge only after a
+reviewer supplies complete replacement text or deletion and a reason for every
+conflicted path. It rechecks the saved review and writes a new candidate tree
+with an audit receipt. Run `python3 -B line-1/tools/conflict-finish/test_finish.py`
+from the workspace root; the 9 new tests passed. See `STEP-26.md` and the tool
+README for the real-file trial, use and limits. A small ochre bridge now spans
+an open patch of the inherited wall.

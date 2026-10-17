@@ -1,0 +1,15 @@
+{
+  "source": "line-1/tools/threeway",
+  "source_files": 6,
+  "conflicted_paths": [
+    "README.md"
+  ],
+  "packet_sha256": "515776affdbab6b4920775f8a41ffb08612a7b843ccb7becf7aabbda8377d434",
+  "decisions_sha256": "16b0f5e3c84b8f57fa68d128bc369f5755b7081fa78e5544559f0203b0bd58e0",
+  "staged_files": 6,
+  "staged_bytes": 14714,
+  "both_contributions_present": true,
+  "source_bytes_preserved": true,
+  "manifest_verified": true,
+  "limits": "Local trial; human resolution text and reason require human review."
+}

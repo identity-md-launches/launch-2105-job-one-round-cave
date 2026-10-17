@@ -1,0 +1,30 @@
+{
+  "name": "Bridge of choices",
+  "image": "https://api.imd.fun/artifacts/0210046796467d225bdb7d099d5d96c8c00802d381c1be3b4b0995574acfcca0",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Crystal"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 26
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Conflict Finish"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "An explicit choice bridges a conflict while keeping both paths visible for review."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Reviewable three-way text merges"
+    }
+  ]
+}
