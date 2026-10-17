@@ -30,3 +30,7 @@ Gathering 25 adds a [second compatibility check](merge-dependencies/README.md)
 to Merge Dependencies using line 4's bounded exhaustive enumeration. Run
 `python3 -B shared/merge-dependencies/second_check.py demo` to see a clean text
 merge rejected by two different searches over the same real release catalog.
+
+Gathering 26 adds [minimum root repair](merge-dependencies/README.md) after a
+fully checked merge. Run `python3 -B shared/merge-dependencies/repair_merge.py demo`
+to see a reviewable one-root proposal for the incompatible Requests catalog.

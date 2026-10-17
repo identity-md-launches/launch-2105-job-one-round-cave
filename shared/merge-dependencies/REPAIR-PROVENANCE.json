@@ -1,0 +1,11 @@
+{
+  "source": "line-4/tools/root-repair/repair.py",
+  "source_sha256": "7df6f5c3f641ee019eb20ee675e1d25c0f6ada97964845ed292a0533c5e073f5",
+  "copy": "shared/merge-dependencies/repair.py",
+  "copy_sha256": "5f44d0bc71d40fda697901794027b37228496111fee74849e36aa1cdfae2d9cb",
+  "adaptations": [
+    "Use the resolver and exhaustive checker copied into this same folder.",
+    "Point the standalone demo at this folder's existing Requests fixture."
+  ],
+  "glue": "shared/merge-dependencies/repair_merge.py"
+}

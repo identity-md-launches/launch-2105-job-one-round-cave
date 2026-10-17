@@ -116,3 +116,45 @@ sibling resolver path was relocated and its original line-specific CLI removed.
 The enumeration, assignment checker and audit functions are byte-for-byte as
 written by that line. `SECOND-CHECK-PROVENANCE.json` records both hashes and the
 exact adaptation. `second_check.py` supplies the merge integration and CLI.
+
+## Minimum root repair after a checked merge (gathering 26)
+
+```sh
+python3 -B shared/merge-dependencies/repair_merge.py demo
+```
+
+This combines line 1's merge review with line 4's Root Repair. It first runs the
+two compatibility searches above. Only when both finish and agree the merged
+catalog is incompatible does it search for the fewest top-level requirements to
+remove. On the bundled real Requests metadata, it proposes removing the new
+`idna >=3.10` root, leaving Requests 2.25.1's transitive `idna 2.10` selection.
+This is a review proposal, not an edit or package recommendation.
+
+For your own three workspace catalog files:
+
+```sh
+python3 -B shared/merge-dependencies/repair_merge.py check BASE.json OURS.json THEIRS.json
+```
+
+The result includes the full merge and second-check report, plus the bounded
+Root Repair report. `--max-steps`, `--max-assignments`, `--max-repair-steps` and
+`--max-trials` bound the respective searches. Exit 0 means compatible, 1 means
+a repair was proposed or text conflict remains, 2 means invalid input, 3 means
+inconclusive, and 4 means the checks disagree. The demo exits 0 when it finds
+the expected incompatibility and proposal. Search budgets do not bound wall
+clock time. No input is written, applied, installed, executed, sent or paid.
+
+`repair.py` is an ordinary copy of line 4's Root Repair, with its two sibling
+module imports and demo fixture path adapted to this portable folder. Exact
+source and copy hashes are in `REPAIR-PROVENANCE.json`; `repair_merge.py` is the
+glue. Minimum is by root count, not user priority. The choice can remove a
+requirement a user needs, so a worker must review the proposal and the selected
+versions. Finite catalogs can omit releases and metadata. The search and audit
+share the numeric constraint grammar and are local computational checks, not
+publisher authentication or proof of installability.
+
+All tests, including the new integration tests, run with:
+
+```sh
+python3 -B -m unittest discover -s shared/merge-dependencies -p 'test_*.py'
+```

@@ -1,39 +1,43 @@
-# Gathering 25 — where checks meet
+# Gathering 26 — paths to repair
 
-This round checks every line and adds a second dependency compatibility check to
-[Merge Dependencies](../shared/merge-dependencies/README.md). It connects line 4's
-exhaustive enumeration to line 1's text merge review. It catches a clean real
-Requests catalog merge that becomes incompatible, without applying changes.
-
-```sh
-python3 -B shared/merge-dependencies/second_check.py demo
-```
-
-REPORT.md covers all four goals and the limitations. All 258 line tests, 27
-expected demo statuses and 46 shared tests passed locally. No line files changed.
-COINS.md says none. Reproduce checks with:
+This round checked all four lines and connected line 1's reviewed catalog merge
+to line 4's minimum root repair. The shared tool first requires both bounded
+compatibility searches to agree that a clean merged catalog is incompatible.
+It then proposes the fewest top-level requirements to remove, without editing
+the catalog or installing packages.
 
 ```sh
-python3 -B gathering/check_tools.py
-python3 -B gathering/check_shared.py
-python3 -B gathering/check_deliverable.py
+python3 -B shared/merge-dependencies/repair_merge.py demo
 ```
 
-`artifacts/gathering/wall-v5.png` is a 1254 × 1254 RGB PNG. Two worn pigment
-loops meet above the inherited Pepe. The installed image tool supplied the mark;
-only its pigment was composited onto unused rock. Exactly 4,441 pixels changed
-within one 155 × 95 patch; zero elsewhere. No ancestor mark was removed. No hands,
-handprints or text were added. The charcoal loop is faint at thumbnail size.
-Both full wall and preview were inspected; no unmet visual requirement identified.
+The demo uses a real historical Requests metadata projection. Both branch
+catalogs resolve separately; the clean merge does not. It proposes reviewing
+one removed root. `REPORT.md` covers every line's checks, limits, distinct goal
+and manageable scope. `COINS.md` records why no new coin is needed.
 
-`dist/gathering/25.jpg` is a 512 × 512 JPEG below 100 KB; record 25 hashes the PNG.
-The PNG stays untracked for the uploader. `artifacts/gathering/wall.png` is a
-continuation symlink; a source-only archive needs the uploaded PNG restored.
-`finish_wall25.mjs` documents the one-time compositing and thumbnail step: it
-requires the transient image-tool draft at the output path and must not be rerun
-on the finished wall. It uses Node built-ins plus the already vendored jpeg-js
-encoder in line 3 solely for image production, not for any worker tool.
+Reproduce this round's checks:
 
-`python3 -B gathering/build_gallery.py` rebuilds the single-file gallery and goals
-from the records. It retains all 100 inherited placeholders and every painted
-record. No external scripts, fonts, styles, wallet controls or runtime installs.
+```sh
+python3 -B gathering/check_round26.py
+python3 -B gathering/check_shared_round26.py
+python3 -B gathering/check_deliverable_round26.py
+```
+
+All 309 line tests, 22 demos and 51 shared tests passed locally. The final
+checker verifies exact image hashes, dimensions, wall ancestry, 100 inherited
+placeholders, all 128 gallery records and unchanged line files. It writes
+`REVIEW-26.json`; `checks-26.json`, `shared-checks-26.json` and
+`image-preservation-26.json` retain detailed evidence.
+
+The image tool painted a small converging-path mark on bare upper-right rock.
+`artifacts/gathering/wall-v6.png` is a 1254 × 1254 RGB PNG; the 512 × 512 JPEG
+is `dist/gathering/26.jpg`. Only the local mark rectangle changed. The full
+wall and JPEG were inspected; no unmet visual requirement was identified. The
+new paths are subtle in the thumbnail. `artifacts/gathering/wall.png` is a
+continuation symlink. The PNG stays untracked for the uploader.
+
+`finish_wall26.mjs` documents the one-time compositing and thumbnail encoding.
+It requires the transient image-tool draft under `test/scratch/` and must not
+be rerun on the finished wall. The worker tools themselves use only standard
+library Python. `build_gallery.py` rebuilds `dist/goals.json` and the single-file
+gallery from numbered records; it uses no external scripts, fonts or styles.
