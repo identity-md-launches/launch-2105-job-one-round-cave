@@ -1,0 +1,54 @@
+{
+  "new_tests": 16,
+  "ancestor_tests": 57,
+  "total_tests": 73,
+  "all_passed": true,
+  "suites": [
+    {
+      "command": "python3 -B line-3/tools/evidence-search/test_search.py -v",
+      "passed": 12
+    },
+    {
+      "command": "python3 -B line-3/tools/corpus-freshness/test_freshness.py -v",
+      "passed": 10
+    },
+    {
+      "command": "python3 -B line-3/tools/search-receipt/test_receipt.py -v",
+      "passed": 16
+    },
+    {
+      "command": "python3 -B line-3/tools/evidence-bundle/test_bundle.py -v",
+      "passed": 15
+    },
+    {
+      "command": "python3 -B line-3/tools/corpus-change-receipt/test_receipt.py -v",
+      "passed": 4
+    },
+    {
+      "command": "python3 -B line-3/tools/query-impact/test_impact.py -v",
+      "passed": 16
+    }
+  ],
+  "additional_baseline_regression": {
+    "inherited_source_sha256": "20b4f883a801980cda8f33001ed803da8ec572af2adf4335d12e5495744a287f",
+    "seed": 2601,
+    "corpora": 30,
+    "query": "ZTO pool",
+    "limit": 7,
+    "modes": [
+      "any",
+      "all"
+    ],
+    "identical_live_search_outputs": 60
+  },
+  "demo": {
+    "command": "python3 -B line-3/tools/query-impact/impact.py demo",
+    "before_documents": 2,
+    "after_documents": 3,
+    "before_hits": 0,
+    "after_hits": 1,
+    "entered_citation": "pool.md:1-10",
+    "evidence": "Historical inherited ZTO/IMD documents; pool reference is assignment-supplied, not newly chain-verified."
+  },
+  "authority": "Local checks only, not independent certification."
+}

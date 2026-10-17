@@ -219,7 +219,8 @@ def passages(index):
     return result
 
 
-def search(index, query, root, limit=5, require_all=False):
+def search_snapshot(index, query, limit=5, require_all=False):
+    """Rank embedded source bytes only; never claim a live source was verified."""
     validate_index(index)
     if not isinstance(query, str) or len(query) > 4096:
         raise SearchError("query exceeds 4096 characters")
@@ -228,9 +229,6 @@ def search(index, query, root, limit=5, require_all=False):
         raise SearchError("query must contain a word or address")
     if not 1 <= limit <= 50:
         raise SearchError("limit must be between 1 and 50")
-    root = workspace_path(root)
-    if not root.is_dir():
-        raise SearchError("corpus root must be a directory")
     candidates = passages(index)
     count = len(candidates)
     average = sum(item["length"] for item in candidates) / count if count else 1
@@ -248,7 +246,7 @@ def search(index, query, root, limit=5, require_all=False):
             score += idf * tf * 2.2 / (tf + 1.2 * (0.25 + 0.75 * item["length"] / average))
         ranked.append((score, item, matched))
     ranked.sort(key=lambda row: (-row[0], row[1]["document"]["path"], row[1]["start"]))
-    hits, verified, selected_spans = [], set(), {}
+    hits, selected_spans = [], {}
     for score, item, matched in ranked:
         document = item["document"]
         name = document["path"]
@@ -256,15 +254,10 @@ def search(index, query, root, limit=5, require_all=False):
         if any(item["start"] <= end and start <= item["end"]
                for start, end in selected_spans.get(name, [])):
             continue
-        if name not in verified:
-            raw = read_bytes(workspace_path(root / name), MAX_FILE_BYTES)
-            if digest(raw) != document["sha256"]:
-                raise SearchError(f"stale source: {name}; rebuild the index")
-            verified.add(name)
         selected_spans.setdefault(name, []).append((item["start"], item["end"]))
         hits.append({"path": name, "line_start": item["start"], "line_end": item["end"],
                      "citation": f"{name}:{item['start']}-{item['end']}",
-                     "sha256": document["sha256"], "source_verified": True,
+                     "sha256": document["sha256"], "source_verified": False,
                      "score": round(score, 8), "matched_terms": matched,
                      "text": item["text"]})
         if len(hits) >= limit:
@@ -273,6 +266,24 @@ def search(index, query, root, limit=5, require_all=False):
             "terms": terms, "require_all": require_all,
             "indexed_documents": len(index["documents"]),
             "indexed_passages": count, "hits": hits}
+
+
+def search(index, query, root, limit=5, require_all=False):
+    """Rank a snapshot, then verify every returned source against the live root."""
+    root = workspace_path(root)
+    if not root.is_dir():
+        raise SearchError("corpus root must be a directory")
+    result = search_snapshot(index, query, limit, require_all)
+    verified = set()
+    for hit in result["hits"]:
+        name = hit["path"]
+        if name not in verified:
+            raw = read_bytes(workspace_path(root / name), MAX_FILE_BYTES)
+            if digest(raw) != hit["sha256"]:
+                raise SearchError(f"stale source: {name}; rebuild the index")
+            verified.add(name)
+        hit["source_verified"] = True
+    return result
 
 
 def emit(value):

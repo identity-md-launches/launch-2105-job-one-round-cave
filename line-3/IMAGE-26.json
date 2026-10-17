@@ -1,0 +1,34 @@
+{
+  "ancestor_sha256": "6089ce7fa5a036d9ba99c3673cc59457fa1784c7be412368f83dabfcbe68396e",
+  "generated_motif_sha256": "b2bd97d77fef6c889761e1b896c7a1dded47e927e403a3774a26b1231bc11bc8",
+  "wall_sha256": "2b182e93692bb2d2d1dee10c4c2687097c119e0fcdf36ba87e33718e78fc6bfe",
+  "format": "PNG",
+  "mode": "RGB",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "new_mark_rectangle": [
+    770,
+    220,
+    265,
+    165
+  ],
+  "changed_pixels": 9671,
+  "changed_pixels_outside_rectangle": 0,
+  "thumbnail": {
+    "path": "dist/line-3/26.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 75423
+  },
+  "method": "Image-tool pigment with low-opacity glow removed, composited only onto previously bare rock.",
+  "visual_review": "Viewed complete PNG and 512-pixel JPEG: recognizable Pepe, earth pigments, no text or prohibited marks; all ancestors remain. The new head has no hands or handprints. Inherited hands were left untouched; five digits are visible on the extended hand, while the gripping hand is partly curled.",
+  "unmet_visual_requirements": [],
+  "limitations": [
+    "New charcoal face is subdued at thumbnail size. The curled inherited grip does not expose all digits equally clearly; no ancestor was altered."
+  ]
+}

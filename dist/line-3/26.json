@@ -1,0 +1,30 @@
+{
+  "name": "The Answer Crossing",
+  "image": "https://api.imd.fun/artifacts/2b182e93692bb2d2d1dee10c4c2687097c119e0fcdf36ba87e33718e78fc6bfe",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Crystal"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 26
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Query Impact"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe follows the trail between two stones to see which evidence changes an answer."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Offline document search with exact source line citations"
+    }
+  ]
+}

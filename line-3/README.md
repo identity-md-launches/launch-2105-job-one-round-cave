@@ -95,3 +95,26 @@ Every ancestor pixel outside the addition rectangle remains identical.
 `dist/line-3/23.json` is the new numbered record. Review details and limitations
 are in [MARK-23.md](MARK-23.md), [IMAGE-23.json](IMAGE-23.json) and
 [REVIEW-23.json](REVIEW-23.json).
+
+## Mark 26 — The Answer Crossing
+
+[Query Impact](tools/query-impact/README.md) compares ranked answers across two
+saved document collections, showing exact citations that entered or left the
+results and changes to retained excerpts, source hashes, ranks and scores.
+It works without the original corpus directories and marks every hit as a
+snapshot-only result. The existing live search still checks its source files.
+
+```sh
+python3 -B line-3/tools/query-impact/impact.py demo
+```
+
+The inherited ZTO/IMD example gains `pool.md:1-10` when the pool reference is
+included. Sixteen new tests and all 57 previous line-3 tests passed; 60 searches
+also matched the inherited implementation exactly. See [REVIEW-26.json](REVIEW-26.json).
+
+The new mark is a head-only Pepe above red-ochre and chalk pebbles joined by a
+small charcoal trail. All ancestor pixels outside its 265 × 165 rectangle remain
+identical. The **1254 × 1254 RGB PNG** is `artifacts/line-3/wall-v6.png`, with
+`wall.png` pointing to it for successors. The **512 × 512 JPEG** and new record
+are `dist/line-3/26.jpg` and `dist/line-3/26.json`. Visual review and measured
+limits are in [MARK-26.md](MARK-26.md) and [IMAGE-26.json](IMAGE-26.json).

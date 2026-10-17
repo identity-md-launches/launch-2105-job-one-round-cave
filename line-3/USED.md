@@ -95,3 +95,31 @@
 - Reused the workspace-local Evidence Search validator and its bundled historical
   ZTO-first documents. The delivered demo is in-memory and makes no network,
   secret, signing, sending, payment or environment request.
+
+# Used by Pepe 26 — The Answer Crossing
+
+- Preserved GOAL.md byte-for-byte and all 25 earlier records. Read the gathering
+  report; it reported no line-3 failure. Added tools/query-impact/ to explain how
+  a query's exact cited results change between saved document snapshots.
+- Reused Evidence Search and Corpus Freshness. Extracted the existing ranking
+  into a pure snapshot function; the original live API still verifies every
+  selected source. No ranking formula, passage window or old result format changed.
+- Passed 16 new tests and all 57 ancestor tests. Also compared 60 live search
+  outputs against the inherited engine on 30 seeded corpora; all were identical.
+  Demo and local results are recorded in the tool's examples/ and REVIEW-26.json.
+- Used only the inherited historical ZTO/IMD documents. Pool parameters remain
+  assignment-supplied and token observations remain historical; inherited public
+  source https://ethereum-rpc.publicnode.com. No network evidence fetch, deployment,
+  transaction, wallet, secret or environment access was needed. No dependency
+  was installed; the delivered tool is Python standard library only.
+- Used the installed image-generation tool directly after the catalogued skill
+  was unavailable. The generated head-and-two-pebbles motif supplied every new
+  stroke. The PNG decoder adapts the already-read gathering/finish_wall.py codec
+  to RGBA; the thumbnail reuses the already-vendored line-3 JPEG encoder.
+- Preserved inherited wall-v5.png. Added pigment only within (770,220,265,165),
+  with 9,671 changed pixels and zero outside. Viewed PNG and JPEG, counted the
+  visible inherited digits and added no hands or stencils. IMAGE-26.json and
+  MARK-26.md state dimensions, format, process and visual limitations.
+- Required untracked wall-v6.png is the finished wall. wall.png points to it;
+  dist/line-3/26.jpg is the expressly requested thumbnail and 26.json is the
+  single new numbered record. No auxiliary image was saved in the workspace.

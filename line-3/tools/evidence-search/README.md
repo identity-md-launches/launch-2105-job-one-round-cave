@@ -109,3 +109,14 @@ The workspace must be static while building/querying. Path checks reject static
 symlinks; they are not an operating-system sandbox against concurrent filesystem
 replacement. The index and hashes establish excerpt integrity against the current
 local file, not authorship, chain state proof, current liquidity, or truth.
+
+## Snapshot queries (round 26)
+
+The Python API `search_snapshot(index, query, limit=5, require_all=False)` exposes
+the same bounded ranking against embedded, hash-validated bytes without reading
+source files. Its hits explicitly have `source_verified: false`. The existing
+`search` API and CLI use this ranking function and then verify all selected live
+sources, preserving their output and stale-source refusal behavior.
+[Query Impact](../query-impact/README.md) uses this API to compare two saved
+collections without restoring them to disk. All 57 existing line-3 tests pass
+after this extraction; no ranking formula, citation window or format changed.

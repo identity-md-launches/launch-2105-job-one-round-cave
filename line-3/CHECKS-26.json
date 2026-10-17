@@ -1,0 +1,32 @@
+{
+  "scope_check": "passed",
+  "goal_unchanged": true,
+  "older_records_unchanged": 25,
+  "new_record": "dist/line-3/26.json",
+  "wall": {
+    "path": "artifacts/line-3/wall-v6.png",
+    "format": "PNG",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 3941727,
+    "sha256": "2b182e93692bb2d2d1dee10c4c2687097c119e0fcdf36ba87e33718e78fc6bfe",
+    "untracked_for_upload": true
+  },
+  "thumbnail": {
+    "path": "dist/line-3/26.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 75423,
+    "sha256": "950bcd2dec6b0b9cc39a9e422c71e66e863b7816857fbc747eeb82ea9afbb9a3"
+  },
+  "continuation_matches": true,
+  "changed_pixels": 9671,
+  "changed_pixels_outside_rectangle": 0,
+  "new_files_under_100000_bytes_outside_artifacts": true,
+  "unmet_visual_requirements": []
+}

@@ -1,0 +1,82 @@
+{
+  "format": "evidence-query-impact/v1",
+  "request": {
+    "query": "ZTO pool tick spacing",
+    "limit": 5,
+    "require_all": true
+  },
+  "before_snapshot_sha256": "45194bd3b26e0548fa2b6f382d63b9f8ba4fa6e8e5959ac7e4ac1c0f6834454a",
+  "after_snapshot_sha256": "a164a8d903f8e8ce731056e26e4ffc1d0818d13c69a845a366928d070e979e63",
+  "verification_scope": "embedded UTF-8 bytes only; no live source or truth check",
+  "answers_changed": true,
+  "corpus": {
+    "format": "evidence-corpus-freshness/v1",
+    "fresh": false,
+    "indexed_documents": 2,
+    "current_documents": 3,
+    "added": [
+      "pool.md"
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "changes": {
+    "entered": [
+      {
+        "rank": 1,
+        "path": "pool.md",
+        "line_start": 1,
+        "line_end": 10,
+        "citation": "pool.md:1-10"
+      }
+    ],
+    "left": [],
+    "retained": []
+  },
+  "before": {
+    "format": "evidence-search-results/v1",
+    "query": "ZTO pool tick spacing",
+    "terms": [
+      "pool",
+      "spacing",
+      "tick",
+      "zto"
+    ],
+    "require_all": true,
+    "indexed_documents": 2,
+    "indexed_passages": 4,
+    "hits": []
+  },
+  "after": {
+    "format": "evidence-search-results/v1",
+    "query": "ZTO pool tick spacing",
+    "terms": [
+      "pool",
+      "spacing",
+      "tick",
+      "zto"
+    ],
+    "require_all": true,
+    "indexed_documents": 3,
+    "indexed_passages": 6,
+    "hits": [
+      {
+        "path": "pool.md",
+        "line_start": 1,
+        "line_end": 10,
+        "citation": "pool.md:1-10",
+        "sha256": "c0550528c6de8499660048c0ee32a7770fab2015ade42e00f30070b9a434008b",
+        "source_verified": false,
+        "score": 5.61137984,
+        "matched_terms": [
+          "pool",
+          "spacing",
+          "tick",
+          "zto"
+        ],
+        "text": "# ZTO and IMD pool reference\n\nZTO is paired with IMD in a Uniswap v4 pool on Ethereum.\nPoolManager: 0x000000000004444c5dc75cB358380D2e3dE08A90.\nPool ID: 0x888b07bd282f587d3c6b0fcb23e7fc55bbb33abe8910dd7492db815dc8dc5592.\nPool fee: 12500. Tick spacing: 60.\nZTO contract: 0xd782bdea4ef02a0bd391eb9089470c8080f0a68e.\nIMD contract: 0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7.\n\n## Source boundary"
+      }
+    ]
+  },
+  "report_sha256": "0754d25d89be10904c35cca8420f0683a737d720fcbe76c59e8b324dc1a940bd"
+}
